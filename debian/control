@@ -1,0 +1,15 @@
+Source: vyatta-debian-lldpd-config
+Section: contrib/net
+Priority: optional
+Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
+Build-Depends: debhelper (>= 9.0.0)
+Standards-Version: 3.9.6
+
+Package: vyatta-debian-lldpd-config
+Architecture: all
+Depends: ${misc:Depends}, adduser
+Pre-Depends: lldpd
+Description: Vyatta changes to the Debian default configuration
+ This package includes the Vyatta changes to the Debian default configuration.
+ Those changes are performed duuring postinst only.
+ The package itself is an empty package.
